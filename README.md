@@ -20,7 +20,9 @@
 - Servlet
 - Thread
 
-## HTTP Cache, gzip 실습
+<br>
+
+## 1. HTTP Cache, gzip 실습
 
 HomeControllerTest 테스트 메소드를 모두 통과시켜 본다.
 
@@ -30,25 +32,30 @@ HomeControllerTest 테스트 메소드를 모두 통과시켜 본다.
 - 미션4: 캐시 무효화 설정을 해본다.
 - 미션5: Cache-Control: no-store, no-cache, must-revalidate 설정을 해본다.
 
+<br>
+<br>
 
-## Servlet 실습
+## 2. Servlet 실습
 
 ServletTest와FilterTest 클래스의 모든 테스트를 통과시킨다.
 
-* 서블릿 학습 테스트
+### A. 서블릿 학습 테스트
   - SharedCounterServlet, LocalCounterServlet 클래스를 열어보고 어떤 차이점이 있는지 확인한다.
   - init, service, destroy 메서드가 각각 언제 실행되는지 콘솔 로그에서 확인한다.
   - 직접 톰캣 서버를 띄워보고 싶다면 ServletApp 클래스의 main 메서드를 실행한다. 
     - 웹 브라우저에서 localhost:8080/shared-counter 경로에 접근 가능한지 확인한다.
 
 
-* 필터 학습 테스트
+### B. 필터 학습 테스트
   - doFilter 메서드는 어느 시점에 실행될까? 콘솔 로그에서 확인한다.
   - 왜 인코딩을 따로 설정해줘야 할까?
     - [ServletResponse](https://docs.oracle.com/javaee/7/api/javax/servlet/ServletResponse.html)
     - 위 링크에서 character encoding에 대한 설명을 참고한다.
 
-## Thread 실습
+<br>
+<br>
+
+## 3. Thread 실습
 
 ThreadTest와 ThreadPoolsTest 클래스의 모든 테스트를 통과시킨다.
 
